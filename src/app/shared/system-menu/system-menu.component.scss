@@ -1,0 +1,29 @@
+button.mat-menu-item {
+    background-color: #4a4947;
+    color: white;
+    text-transform: none;
+    font-size: 14px;
+    float: left;
+  
+    &:hover {
+      background-color: #787878;
+    }
+  }
+  
+  .mat-menu-panel {
+    background-color: #4a4947;
+    color: white;
+    border: 2px solid #000;
+    box-shadow: none;
+  }
+  .systemMenu {
+    display: flex;
+    align-items: center;
+    gap: 8px; /* Optional spacing between buttons */
+  }
+  
+  .systemMenu .subMenu  {
+    display: flex;
+    flex-direction: column; 
+    padding-left: 20px; 
+  }

@@ -1,1 +1,185 @@
-/* You can add global styles to this file, and also import other style files */
+// // Variables for old-school PC style
+// $background-color: #000; // Pure black background
+// $button-color: #c0c0c0; // Classic gray
+// $dropdown-color: #d3d3d3; // Lighter gray for dropdowns
+// $border-color: #fff; // White for borders
+// $text-color: #00ff00; // Green text (classic terminal style)
+// $font-family: 'MS Sans Serif', 'Small Fonts', sans-serif; // System font for old-school appearance
+// $font-size: 10px; // Small system font size
+
+// // Root container
+// body {
+//   font-family: $font-family;
+//   font-size: $font-size;
+//   background-color: $background-color;
+//   color: $text-color;
+//   margin: 0;
+//   padding: 0;
+//   overflow: hidden;
+// }
+
+// // General styling for all elements
+// * {
+//   image-rendering: pixelated; // Force pixelation for images
+//   -webkit-font-smoothing: none; // Disable font smoothing
+//   -moz-osx-font-smoothing: grayscale;
+//   text-rendering: geometricPrecision;
+// }
+
+// // Buttons
+// button, .mat-button {
+//   min-height:20px !important;
+//   height:20px !important;
+//   display: inline-block;
+//   padding: 0px 6px !important;
+//   margin: 0;
+//   font-size: $font-size !important;
+//   cursor: pointer;
+//   text-transform: none !important; // No uppercase
+//   box-shadow: none !important;
+//   outline: none;
+//   border-radius: 0 !important; // Sharp corners
+
+//   &:hover {
+//     background-color: darken($button-color, 10%) !important;
+//   }
+
+//   &:active {
+//     background-color: lighten($button-color, 10%) !important;
+//   }
+// }
+
+// // Dropdown menu
+// .mat-menu {
+//   background-color: $dropdown-color !important;
+//   border: 1px solid $border-color !important;
+//   box-shadow: none !important;
+//   border-radius: 0 !important; // Sharp corners
+// }
+
+// .mat-menu-item {
+//   padding: 0px 0px !important;
+//   color: $background-color !important; // Black text
+//   background-color: $text-color !important; // Green highlight
+//   border-bottom: 1px solid $border-color !important;
+
+//   &:hover {
+//     background-color: lighten($dropdown-color, 10%) !important;
+//   }
+
+//   &:last-child {
+//     border-bottom: none !important;
+//   }
+// }
+
+// // Dropdown positioning
+// .mat-menu-trigger {
+//   position: relative !important;
+// }
+
+// .mat-menu-panel {
+//   position: absolute !important;
+//   top: 100% !important; // Appear directly under the button
+//   left: 0 !important;
+//   width: auto !important;
+//   min-width: 120px !important;
+//   box-shadow: none !important;
+// }
+
+// // Additional blocky accents
+// .box {
+//   background-color: $button-color;
+//   border: 2px solid $border-color;
+//   font-size: $font-size;
+//   text-transform: none;
+// }
+
+// // Material input fields
+// .mat-input-element {
+//   background-color: $background-color !important;
+//   color: $text-color !important;
+//   border: 1px solid $border-color !important;
+//   padding: 3px !important;
+//   border-radius: 0 !important;
+// }
+
+// .mat-form-field {
+//   border: none !important;
+//   padding: 0 !important;
+//   margin: 0 !important;
+// }
+
+// // Material tables
+// .mat-table {
+//   background-color: $background-color !important;
+//   color: $text-color !important;
+//   border: 1px solid $border-color !important;
+// }
+
+// .mat-header-row, .mat-row {
+//   background-color: $dropdown-color !important;
+//   color: $background-color !important;
+//   border-bottom: 1px solid $border-color !important;
+
+//   &:hover {
+//     background-color: lighten($dropdown-color, 10%) !important;
+//   }
+// }
+
+// // Tooltips
+// .mat-tooltip {
+//   background-color: $border-color !important; // White background
+//   color: $background-color !important; // Black text
+//   font-size: $font-size !important;
+//   border: 1px solid $text-color !important; // Green border
+// }
+// .cdk-overlay-pane{
+//     width: unset !important;
+//     height: unset !important;
+//     max-width: 100% !important;
+//   }
+  
+// // Dialogs and modals
+// .mat-dialog-container {
+//     max-width: 100%;
+//     max-height: 100% !important;
+//     resize: both;
+//   background-color: $dropdown-color !important;
+//   color: $text-color !important;
+//   border: 1px solid $border-color !important;
+//   border-radius: 0 !important; // Sharp corners
+//   box-shadow: 0 2px 10px rgba(0, 0, 0, 0.3) !important;
+//   z-index:0 !important;
+// }
+// .draggable-dialog {
+//     position: absolute;
+//   }
+  
+//   .draggable-dialog .mat-dialog-container {
+//     cursor: move; /* Show move cursor when hovering */
+//   }
+  
+//   .cdk-drag {
+//     position: absolute; /* Ensure the dialog can move freely */
+//   }
+
+//   app-dialog-wrapper {
+//     position:absolute;
+//     height: 100vh;
+//     width: 100vw;
+//     top:0;
+//     left:0;
+//   }
+//   .mat-mdc-dialog-surface {
+//     position:absolute !important;
+//     top:30vh !important;
+//     left:0 !important;
+//     width:0 !important;
+//     overflow:visible !important;
+//     background-color: rgba(0,0,0,0) !important;
+//     z-index:0 !important;
+//     box-shadow: 0 0 0 rgba(0, 0, 0, 0) !important;
+//   }
+//   .cdk-overlay-backdrop {
+//     display:none;
+//   }

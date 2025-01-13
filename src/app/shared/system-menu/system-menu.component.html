@@ -1,0 +1,17 @@
+<div [class]="isSubmenu ? 'subMenu' : 'systemMenu'" ><span *ngFor="let item of menuItems; let i = index">
+      <ng-container *ngIf="canActivate(item.guard)">
+        <button
+          mat-menu-item
+          [matMenuTriggerFor]="item.children ? subMenuMap[item.name] : null"
+          (click)="openDialog(item)"
+        >
+          {{ item.name }}
+        </button>
+      </ng-container>
+  
+      <ng-container *ngIf="item.children">
+        <mat-menu #menu="matMenu">
+          <app-system-menu [menuItems]="item.children" [isSubmenu]="true"></app-system-menu>
+        </mat-menu>
+      </ng-container>
+    </span></div>

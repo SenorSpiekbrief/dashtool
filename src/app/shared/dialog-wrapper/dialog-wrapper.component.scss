@@ -1,0 +1,36 @@
+.dialog-backdrop {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 0% !important;
+    height: 0% !important;
+    /* Center content */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow:visible !important;
+  }
+  
+  .dialog-container {
+    background: #fff;
+    border-radius: 8px;
+    box-shadow: 0 10px 2px0 rgba(0, 0, 0, 1) !important;
+    position: relative;
+    padding: 0;
+    z-index: 0;
+  }
+  
+  .dialog-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: #007acc;
+    color: #fff;
+    padding: 8px;
+    cursor: move; /* cdkDragHandle */
+  }
+  
+  .dialog-body {
+    padding: 16px;
+  }
+  

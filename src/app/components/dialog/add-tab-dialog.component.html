@@ -1,0 +1,30 @@
+<h1 mat-dialog-title>Select Tab Format</h1>
+<div mat-dialog-content>
+  <mat-form-field appearance="fill" class="full-width">
+    <mat-label>Preset Format</mat-label>
+    <mat-select [(value)]="selectedFormat" (selectionChange)="onFormatChange()">
+      <mat-option *ngFor="let format of formats" [value]="format">
+        {{ format.label }}
+      </mat-option>
+    </mat-select>
+  </mat-form-field>
+
+  <mat-checkbox [(ngModel)]="customSize" (change)="onCustomSizeChange()">Custom Size</mat-checkbox>
+
+  <div *ngIf="customSize" class="custom-size-inputs">
+    <mat-form-field appearance="fill">
+      <mat-label>Width (columns)</mat-label>
+      <input matInput type="number" [(ngModel)]="customWidth" min="1" max="100" />
+    </mat-form-field>
+
+    <mat-form-field appearance="fill">
+      <mat-label>Height (rows)</mat-label>
+      <input matInput type="number" [(ngModel)]="customHeight" min="1" max="100" />
+    </mat-form-field>
+  </div>
+</div>
+
+<div mat-dialog-actions align="end">
+  <button mat-button mat-dialog-close>Cancel</button>
+  <button mat-raised-button color="primary" (click)="confirm()">Confirm</button>
+</div>

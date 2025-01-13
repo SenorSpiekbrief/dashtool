@@ -1,0 +1,7 @@
+<gridster [options]="options">
+    <gridster-item *ngFor="let item of items" [item]="item">
+      <div class="item-content">
+        {{ item.cols }}x{{ item.rows }}
+      </div>
+    </gridster-item>
+  </gridster>

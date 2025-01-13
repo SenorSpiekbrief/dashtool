@@ -1,0 +1,9 @@
+<mat-tab-group>
+    <mat-tab *ngFor="let tab of tabs; let i = index" [label]="tab.label">
+      <div class="grid-container">
+        <app-gridster [options]="tab.gridOptions" [items]="tab.items"></app-gridster>
+      </div>
+      <button mat-button (click)="closeTab(tab.id)">X</button>
+    </mat-tab>
+  </mat-tab-group>
+  <button mat-fab color='primary' (click)='addTab()'>Add Tab</button>

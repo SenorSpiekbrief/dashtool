@@ -1,0 +1,16 @@
+<div
+      class="dialog-container"
+      cdkDragBoundary=".cdk-overlay-backdrop" cdkDrag
+      [ngStyle]="{ width: width + 'px', height: height + 'px' }"
+    >
+      <!-- Draggable Header -->
+      <div cdkDragHandle class="dialog-header">
+        <span>{{ title }}</span>
+        <button mat-icon-button (click)="close()">
+          <mat-icon>close</mat-icon>
+        </button>
+      </div>
+
+      <!-- Dynamic Component Loader -->
+      <div #dynamicContentContainer class="dialog-body"></div>
+    </div>

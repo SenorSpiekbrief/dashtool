@@ -1,0 +1,31 @@
+[
+    {
+      "name": "New",
+      "children": [
+        { "name": "New Dashboard", "component": "NewDashboardComponent", "guard": "canActivateNewFile" },
+        { "name": "New Report", "component": "NewReportComponent", "guard": "canActivateNewFile" }
+      ]
+    },
+    {
+      "name": "Edit",
+      "children": [
+        { "name": "Edit Dashboard", "component": "DashboardOverviewComponent" },
+        { "name": "Edit Report", "component": "ReportOverviewComponent" }
+      ]
+    },
+    {
+      "name": "Data",
+      "children": [
+        { "name": "Import", "component": "ImportComponent" },
+        { "name": "Export", "component": "ExportComponent" },
+        {
+          "name": "Advanced Data Canvas",
+          "children": [
+            { "name": "Details", "component": "DetailsComponent" },
+            { "name": "Preview", "component": "PreviewComponent" }
+          ]
+        }
+      ]
+    }
+  ]
+  
